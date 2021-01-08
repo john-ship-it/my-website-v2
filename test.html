@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>It's Me, John</title>
+		<link rel="stylesheet" href="test.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+	</head>
+	<body style="background-color: black;">
+		<div id="navbar-container">
+			<nav id="navbar">
+				<ul>
+					<li><a href="#about-me">about</a></li>
+					<li><a href="#projects">portfolio</a></li>
+					<li><a href="blog.html">blog</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="first-section">
+			<div id="title-container">
+				<h1 id="title">Hi! My name is John. <br>And this is my site.</h1>
+				<h3 id = "enjoy">Hope you enjoy :)</h3>
+			</div>
+			<div id ="spotlight">
+			</div>
+		</div>
+		<div id="about-me">
+			<div class="next-section introduction" style="padding-bottom: 60px;">
+				<div id = "intro">
+					<img src="Portrait.jpeg">
+					<div>
+						<p style="font-size: 30px;"> About me</p>
+						<p>My name is John Volpatti and I am a third year Industrial Engineering student at the University of Toronto.</p>
+						<p>I am keen on operations research and product management.</p>
+						<p>Outside the classroom, I like to read, go on runs, and play the piano!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="next-section">
+			<div class="work-and-projects">
+				<h1 style="margin-bottom: 40px;">Work</h1>
+				<div id="work-container">
+					<div class = "internships" style="background-color: #e6ffe6;">
+						<div class="main-info-button">
+							<div>
+								<h3 style="margin-top: 0;">TD Bank</h3> 
+								<h4>Product Acquisition Intern</h4>
+								<p>Summer 2020</p>
+							</div>
+							<button type="button" class="expand-button" onclick="revealMessage(0)">
+								<p class="plus-minus">+</p>
+							</button>
+						</div>
+						<div class="hidden-content">
+							<p>Analyzed the efficacy of a multi-million dollar marketing campaign that ran early 2020 and provided recommendations for the 2021 initiative.</p>
+							<p>Created, developed and circulated materials that were critical in the launch of another marketing campaign targeting over 1 million people.</p>
+						</div>
+					</div>
+					<div class = "internships" style="background-color: #F0FFFF;">
+						<div class = "main-info-button">
+							<div>
+								<h3 style="margin-top: 0;">U of T</h3> 
+								<h4>Research Intern</h4>
+								<p>Summer 2019</p>
+							</div>
+							<button type="button" class="expand-button" onclick="revealMessage(1)">
+								<p class="plus-minus">+</p>
+							</button>
+						</div>
+						<div class="hidden-content">
+							<p>Developed a database to store survey results and a program that converts the results from array into matrix form (using SQL and C).</p>
+							<p>Calibrated, stored and organized eye-tracking data and collected relevant information integral to the outcome of experiments.</p>
+						</div>
+					</div>
+					<div class = "internships" style="background-color: #ffe6e6;">
+						<div class="main-info-button">
+							<div>
+								<h3 style="margin-top: 0;">Mathnasium</h3> 
+								<h4>Math Instructor</h4>
+								<p>Summer 2018</p>
+							</div>
+							<button type="button" class="expand-button" onclick="revealMessage(2)">
+								<p class="plus-minus">+</p>
+							</button>
+						</div>
+						<div class="hidden-content">
+							<p>Math Instructor to students between the grades of 1 and 12.</p>
+							<p>Assisted them with problems they had with worksheets and introduced new concepts and new methods to solve problems.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects">
+			<div class="next-section">
+				<div class="work-and-projects">
+					<h1>Projects</h1>
+					<div id="projects-container">
+						<div id = "timeline">
+							<div class="container">
+								<h2>Hospital ED Simulation</h2>
+								<h4>November - December 2020</h4>
+								<p>Simulated the Emergency Department (ED) of a hospital using Simio. My team and I designed the model from scratch (involving resources representing physicians for each ward) and compared alternative scenarios using the KN algorithm. We also used "fitdistrplus" in R to fit distributions to treatment time data.</p>
+							</div>
+							<div class="container">
+								<h2>Fake News</h2>
+								<h4>July - August 2020</h4>
+								<p>My <a href="https://www.google.com/search?q=friends&sxsrf=ALeKk03-tRR6BklN-A8jbfv8AKHOMWakDw:1609970934941&tbm=isch&source=iu&ictx=1&fir=7i2_XywEZ60b2M%252CXJI53M_S0qN5PM%252C%252Fm%252F030cx&vet=1&usg=AI4_-kSU_tDNOQe-ndyxQZdTygtZJec1jw&sa=X&ved=2ahUKEwjtz7ONqYjuAhVKbc0KHdNlB6EQ_B16BAg6EAE#imgrc=7i2_XywEZ60b2M">friends</a> and I created a PyTorch-based program that can predict whether a news article is true or fake. Data was collected from Kaggle and preprocessed through our script. GloVe embeddings were used for words in each article and such embeddings were fed into an RNN (specifically a GRU), where the output was either true or fake. Our model was able to achieve a final testing accuracy of 98.8%.</p>
+								<img src="Fake-News-Schema.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="next-section end">
+			<div id = "farewell">
+				<h2>Well, that's it.</h2>
+				<h3>Loved making this website and I hope y'all enjoyed!</h3>
+				<h3>Feel free to reach out to me at john.volpatti@mail.utoronto.ca or check out my <a href="https://www.linkedin.com/in/johnvolpatti/"> LinkedIn</a>.</h3>
+				<h3>Check out the blog too!</h3>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous">
+		</script>
+		<script src="test.js"></script>
+	</body>
+</html>
